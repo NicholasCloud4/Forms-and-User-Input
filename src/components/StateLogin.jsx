@@ -44,7 +44,7 @@ export default function StateLogin() {
         })
     }
 
-    function handleInputBlue(identifier, event) {
+    function handleInputBlur(identifier) {
         setDidEdit((prevEdit) => {
             return {
                 ...prevEdit,
@@ -74,7 +74,7 @@ export default function StateLogin() {
                         type="email"
                         name="email"
                         onChange={(event) => handleInputChange("email", event)}
-                        onBlur={(event) => handleInputBlue("email", event)}
+                        onBlur={(event) => handleInputBlur("email")}
                         value={enteredValues.email}
                     />
                     <div className="control-error">{emailIsInvalid && "Please enter a valid email."}</div>
