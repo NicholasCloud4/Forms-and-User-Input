@@ -11,6 +11,10 @@ export default function Login() {
         const enteredPassword = password.current.value;
 
         console.log(enteredEmail, enteredPassword);
+
+        // Reset
+        // email.current.value = "";
+        // password.current.value = "";
     }
 
     return (
